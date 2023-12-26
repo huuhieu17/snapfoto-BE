@@ -2,6 +2,9 @@ from typing import Union
 from fastapi import FastAPI
 from app.db import get_database
 from app.api import auth
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
 app = FastAPI(
     title="snapfotoAPI",
     description="Nơi tình yêu của bạn được chia sẻ qua từng bức ảnh.",
